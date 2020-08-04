@@ -1,46 +1,3 @@
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-# Use scikit-learn to grid search the dropout rate
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
@@ -49,7 +6,7 @@ from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.grid_search import GridSearchCV
 import numpy
 import pandas
-# Function to create model, required for KerasClassifier
+
 def create_model(dropout_rate=0.0):
 	# create model
 	model = Sequential()
@@ -61,13 +18,10 @@ def create_model(dropout_rate=0.0):
 	# Compile model
 	model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return model
- 
-# fix random seed for reproducibility
-seed = 7
+seed = 10
 numpy.random.seed(seed)
 # load dataset
 dataset = numpy.loadtxt("diabetes.csv", delimiter=",")
-# split into input (X) and output (Y) variables
 X = dataset[:,0:8]
 Y = dataset[:,8]
 # create model
