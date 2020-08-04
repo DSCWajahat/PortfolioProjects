@@ -6,3 +6,5 @@ I used modified LeNet to extract features and used them to get similiar fashion 
 In this project, I used modified LeNet CNN to classify different types of shapes and got 99% accuracy.
 # Netflix Analysis
 This project aims to build a movie recommendation mechanism within Netflix. The dataset I used here come directly from Netflix which can be downloaded rom kaggle.
+# UFO Sightings Analysis
+I investigated UFO data over the last century to formulate some questions, and gain insight regarding what the answers may be. This is also be a useful notebook on seeing how one may get their brain juices flowing when faced with an unknown dataset.
